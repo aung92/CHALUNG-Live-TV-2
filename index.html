@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=1.0">
+    <title>HD4STATION | Live TV Stream</title>
+    <meta name="description" content="HD4STATION Live TV - Watch 24/7 HD quality live streams. Free TV channels, sports, news and entertainment.">
+    <meta name="keywords" content="live tv, hd streaming, free tv, bangladesh tv, mirraby, ash tv">
+    <meta name="author" content="HD4STATION">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="main-flex-container">
+    <div class="ltv-page-container">
+        <!-- Header -->
+        <div class="ltv-header">
+            <div class="ltv-brand">
+                <div class="ltv-brand-icon">
+                    <i class="fas fa-broadcast-tower"></i>
+                </div>
+                <div class="ltv-brand-text">
+                    <h1>HD4STATION Live TV</h1>
+                    <p><span class="live-pulse"></span> 24/7 Direct Streams · HD Quality</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Server Tabs -->
+        <div class="ltv-server-tabs" id="serverTabsContainer">
+            <button class="server-tab-btn" data-server="0">
+                <i class="fas fa-server"></i> <span>Mirraby</span>
+            </button>
+            <button class="server-tab-btn" data-server="1">
+                <i class="fas fa-tower-broadcast"></i> <span>Ash TV</span>
+            </button>
+        </div>
+
+        <!-- ENHANCED PLAYER SECTION -->
+        <div class="ltv-player-section">
+            <div class="player-wrapper">
+                <div class="player-container" id="playerContainer">
+                    <div class="live-badge">
+                        <span class="dot"></span> LIVE STREAM
+                    </div>
+                    <div class="player-frame" id="playerFrameWrapper">
+                        <iframe id="livePlayerIframe" 
+                            src="about:blank" 
+                            allow="fullscreen; autoplay; encrypted-media" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Channels -->
+        <div class="channels-section">
+            <div class="section-head">
+                <h3><i class="fas fa-satellite-dish"></i> Available Channels</h3>
+                <div class="scroll-hint"><i class="fas fa-arrows-alt-h"></i> Swipe →</div>
+            </div>
+            <div class="channel-scroll" id="channelScrollWrapper">
+                <div class="channel-grid" id="channelGrid"></div>
+            </div>
+        </div>
+
+        <!-- Social Stats -->
+        <div class="social-stats">
+            <div class="viewer-box">
+                <i class="fas fa-users" style="color: #00C4B4; margin-right: 6px;"></i>
+                <span>Live viewers: <strong id="viewerCount">1,284</strong> online</span>
+            </div>
+            <div class="share-buttons">
+                <div id="shareTwitter" class="share-icon-small"><i class="fab fa-twitter"></i> Share</div>
+                <div id="shareWhatsApp" class="share-icon-small"><i class="fab fa-whatsapp"></i> WhatsApp</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sidebar Section - Stream Info -->
+<div class="sidebar-section-wrapper" id="sidebarSection">
+    <div class="sidebar-container">
+        <div class="sidebar-info">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                <i class="fas fa-info-circle" style="color: #00C4B4; font-size: 18px;"></i>
+                <span style="font-weight: 700; font-size: 16px;">Stream Info</span>
+            </div>
+            <p style="font-size: 12px; color: #A8B8CF; line-height: 1.6;">
+                <i class="fas fa-check-circle" style="color: #30E3A0; font-size: 10px; margin-right: 8px;"></i> HD Quality Streams<br>
+                <i class="fas fa-check-circle" style="color: #30E3A0; font-size: 10px; margin-right: 8px;"></i> 24/7 Uptime<br>
+                <i class="fas fa-check-circle" style="color: #30E3A0; font-size: 10px; margin-right: 8px;"></i> Multiple Servers<br>
+                <i class="fas fa-check-circle" style="color: #30E3A0; font-size: 10px; margin-right: 8px;"></i> No Buffering<br>
+                <i class="fas fa-check-circle" style="color: #30E3A0; font-size: 10px; margin-right: 8px;"></i> Free to Watch
+            </p>
+        </div>
+        <div class="sidebar-tip" style="margin-top: 16px; background: rgba(0,196,180,0.1); border-radius: 14px; padding: 12px;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <i class="fas fa-lightbulb" style="color: #00C4B4;"></i>
+                <span style="font-weight: 600; font-size: 13px;">Pro Tip</span>
+            </div>
+            <p style="font-size: 11px; color: #A8B8CF;">Switch between servers for the best streaming experience. Click on any channel to change the stream.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Floating Social Share Buttons -->
+<div class="floating-share">
+    <div class="share-icon" id="fbShare"><i class="fab fa-facebook-f"></i></div>
+    <div class="share-icon" id="twShare"><i class="fab fa-twitter"></i></div>
+    <div class="share-icon" id="waShare"><i class="fab fa-whatsapp"></i></div>
+    <div class="share-icon" id="copyLinkBtn"><i class="fas fa-link"></i></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
